@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  web:
+    build: /home/ubuntu/acikkaynak/4-Dockerfile
+    command: python3 1-haftaodev.py -h 0.0.0.0
+    volumes:
+      - /home/ubuntu/acikkaynak/4-Dockerfile:/usr/src/app/
+    ports:
+      - 5001:5000
